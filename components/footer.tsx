@@ -1,13 +1,15 @@
 import Link from "next/link";
 
+import { LogoMark } from "@/components/logo";
+
 export function Footer() {
   return (
     <footer className="border-t border-paper-edge bg-surface-secondary">
       <div className="mx-auto max-w-6xl px-6 py-12">
         <div className="flex flex-col justify-between gap-8 md:flex-row">
           <div className="max-w-sm">
-            <Link href="/" className="text-base font-normal tracking-tight">
-              ShipFast <span className="text-brand">Studio</span>
+            <Link href="/" className="inline-flex items-center text-foreground" aria-label="ShipFast Studio home">
+              <LogoMark className="h-12 w-auto" />
             </Link>
             <p className="mt-4 text-base font-extralight leading-7 text-muted">
               Premium product execution for people who need a strong idea turned into a live product fast.
