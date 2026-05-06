@@ -47,7 +47,7 @@ export function HowItWorks({ showLink = true }: { showLink?: boolean }) {
             "Direct progress updates without technical fog.",
             "Launch support and ownership handover.",
           ].map((item) => (
-            <div key={item} className="inset-panel rounded-2xl p-5 text-sm font-light leading-6 text-foreground">
+            <div key={item} className="inset-panel p-5 text-sm font-light leading-6 text-foreground">
               {item}
             </div>
           ))}

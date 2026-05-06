@@ -14,7 +14,7 @@ export default function PricingPage() {
   return (
     <>
       <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-        <p className="inline-flex rounded-full px-3 py-1 text-xs font-light uppercase tracking-widest stamp">Pricing</p>
+        <p className="inline-flex px-3 py-1 text-xs font-light uppercase tracking-widest stamp">Pricing</p>
         <h1 className="mt-6 max-w-4xl text-5xl font-light tracking-tight text-foreground md:text-7xl">
           Premium execution with a clear price.
         </h1>
@@ -34,19 +34,19 @@ export default function PricingPage() {
           <h2 className="text-3xl font-light tracking-tight text-foreground md:text-5xl">What is included</h2>
           <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {included.map((item) => (
-              <div key={item} className="paper-panel rounded-2xl p-6 text-xl font-normal">
+              <div key={item} className="paper-panel p-6 text-xl font-normal">
                 {item}
               </div>
             ))}
           </div>
           <div className="mt-12 grid gap-4 md:grid-cols-2">
-            <div className="inset-panel rounded-2xl p-6">
+            <div className="inset-panel p-6">
               <h3 className="text-xl font-normal">Good fit</h3>
               <p className="mt-4 text-base font-extralight leading-7 text-muted">
                 A focused product, portal, dashboard, tool, automation, or workflow that can launch with a strong first version.
               </p>
             </div>
-            <div className="inset-panel rounded-2xl p-6">
+            <div className="inset-panel p-6">
               <h3 className="text-xl font-normal">Not a good fit</h3>
               <p className="mt-4 text-base font-extralight leading-7 text-muted">
                 Large enterprise platforms, unclear multi-year builds, or ideas where every possible feature must be included on day one.

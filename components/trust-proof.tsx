@@ -50,7 +50,7 @@ export function TrustProof() {
             const Icon = promise.icon;
 
             return (
-              <div key={promise.title} className="paper-panel rounded-2xl p-6">
+              <div key={promise.title} className="paper-panel p-6">
                 <Icon className="h-6 w-6 text-brand" aria-hidden="true" />
                 <h3 className="mt-5 text-xl font-normal">{promise.title}</h3>
                 <p className="mt-3 text-base font-extralight leading-7 text-muted">{promise.text}</p>

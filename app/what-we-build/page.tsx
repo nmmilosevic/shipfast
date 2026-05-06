@@ -14,7 +14,7 @@ export default function WhatWeBuildPage() {
   return (
     <>
       <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-        <p className="inline-flex rounded-full px-3 py-1 text-xs font-light uppercase tracking-widest stamp">What we build</p>
+        <p className="inline-flex px-3 py-1 text-xs font-light uppercase tracking-widest stamp">What we build</p>
         <h1 className="mt-6 max-w-4xl text-5xl font-light tracking-tight text-foreground md:text-7xl">
           Powerful products with one sharp job.
         </h1>
@@ -36,7 +36,7 @@ export default function WhatWeBuildPage() {
           </h2>
           <div className="mt-12 grid gap-4 md:grid-cols-2">
             {productTypes.slice(0, 6).map((type) => (
-              <div key={type} className="paper-panel rounded-2xl p-6">
+              <div key={type} className="paper-panel p-6">
                 <h3 className="text-xl font-normal">{type}</h3>
                 <p className="mt-4 text-base font-extralight leading-7 text-muted">
                   A focused product shaped around a real workflow, with premium screens, strong data flow, and the smallest feature set needed to launch fast.
@@ -44,7 +44,7 @@ export default function WhatWeBuildPage() {
               </div>
             ))}
           </div>
-          <div className="mt-12 rounded-2xl bg-brand p-8 text-white">
+          <div className="mt-12 bg-brand p-8 text-white">
             <h3 className="text-2xl font-light tracking-tight">What slows products down</h3>
             <p className="mt-4 max-w-3xl text-base font-extralight leading-8 text-white/85">
               Bloated first versions, vague platform ideas, slow approval loops, and technical complexity that does not help the user. The first product should create impact quickly.

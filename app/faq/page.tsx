@@ -66,7 +66,7 @@ export default function FAQPage() {
   return (
     <>
       <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-        <p className="inline-flex rounded-full px-3 py-1 text-xs font-light uppercase tracking-widest stamp">FAQ</p>
+        <p className="inline-flex px-3 py-1 text-xs font-light uppercase tracking-widest stamp">FAQ</p>
         <h1 className="mt-6 max-w-4xl text-5xl font-light tracking-tight text-foreground md:text-7xl">
           Questions before you move.
         </h1>
@@ -81,7 +81,7 @@ export default function FAQPage() {
         <div className="mx-auto max-w-4xl px-6">
           <div className="space-y-4">
             {faqs.map((faq) => (
-              <div key={faq.question} className="paper-panel rounded-2xl p-6">
+              <div key={faq.question} className="paper-panel p-6">
                 <h2 className="text-xl font-normal">{faq.question}</h2>
                 <p className="mt-4 text-base font-extralight leading-7 text-muted">{faq.answer}</p>
               </div>

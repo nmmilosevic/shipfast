@@ -5,13 +5,13 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex h-11 cursor-pointer items-center justify-center gap-2 rounded-xl px-5 text-sm font-light transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex h-11 cursor-pointer items-center justify-center gap-2 border px-5 text-sm font-light transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-surface disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
-        default: "border border-red-400/50 bg-brand text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.18),0_12px_34px_rgba(239,68,68,0.28)] hover:bg-red-500 active:translate-y-px",
-        secondary: "border border-paper-edge bg-white/5 text-foreground shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_10px_28px_rgba(0,0,0,0.28)] hover:bg-white/10 active:translate-y-px",
-        ghost: "text-foreground hover:bg-surface-secondary",
+        default: "border-brand bg-brand text-white hover:bg-brand-dark hover:text-surface",
+        secondary: "border-paper-edge bg-transparent text-foreground hover:border-brand hover:text-brand-dark",
+        ghost: "border-transparent text-foreground hover:border-paper-edge hover:bg-surface-secondary",
       },
       size: {
         default: "h-11 px-5",

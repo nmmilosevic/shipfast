@@ -14,7 +14,7 @@ export default function HowItWorksPage() {
   return (
     <>
       <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-        <p className="inline-flex rounded-full px-3 py-1 text-xs font-light uppercase tracking-widest stamp">How it works</p>
+        <p className="inline-flex px-3 py-1 text-xs font-light uppercase tracking-widest stamp">How it works</p>
         <h1 className="mt-6 max-w-4xl text-5xl font-light tracking-tight text-foreground md:text-7xl">
           Fast execution needs a clear command.
         </h1>
@@ -40,7 +40,7 @@ export default function HowItWorksPage() {
               ["Sprint brief", "We define the user, problem, screens, first features, timeline, and fixed project price."],
               ["Build rhythm", "You get visible progress, working previews, and direct decisions until the product is ready to launch."],
             ].map(([title, text]) => (
-              <div key={title} className="paper-panel rounded-2xl p-6">
+              <div key={title} className="paper-panel p-6">
                 <h3 className="text-xl font-normal">{title}</h3>
                 <p className="mt-4 text-base font-extralight leading-7 text-muted">{text}</p>
               </div>
