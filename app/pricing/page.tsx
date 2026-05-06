@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Pricing",
-  description: "Simple fixed project pricing for bringing your product idea to life.",
+  description: "Premium fixed-scope pricing for fast product builds.",
 };
 
 export default function PricingPage() {
@@ -16,16 +16,16 @@ export default function PricingPage() {
       <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
         <p className="inline-flex rounded-full px-3 py-1 text-xs font-light uppercase tracking-widest stamp">Pricing</p>
         <h1 className="mt-6 max-w-4xl text-5xl font-light tracking-tight text-foreground md:text-7xl">
-          A clear price before we start.
+          Premium execution with a clear price.
         </h1>
         <p className="mt-8 max-w-2xl text-base font-extralight leading-8 text-muted">
-          Every project starts with a simple scope. You know what we are building, what it costs, what is included, and what happens next.
+          Every project starts with a fixed scope. You know what we are building, what it costs, what is included, and how fast we can move.
         </p>
         <p className="mt-5 max-w-3xl text-base font-light leading-8 text-foreground">
-          The price depends on the shape of the product, but the working style stays the same: clear scope, fixed project price, and no hidden dependency on us after launch.
+          The price depends on the shape of the product, but the model stays direct: premium build, clear timeline, full ownership, and no hidden dependency after launch.
         </p>
         <Button asChild className="mt-10" size="lg">
-          <Link href="/contact">Bring my idea to life</Link>
+          <Link href="/contact">Request a build</Link>
         </Button>
       </section>
       <PricingPreview showLink={false} />
@@ -43,7 +43,7 @@ export default function PricingPage() {
             <div className="inset-panel rounded-2xl p-6">
               <h3 className="text-xl font-normal">Good fit</h3>
               <p className="mt-4 text-base font-extralight leading-7 text-muted">
-                A focused product, portal, dashboard, tool, or workflow that can launch with a clear first version.
+                A focused product, portal, dashboard, tool, automation, or workflow that can launch with a strong first version.
               </p>
             </div>
             <div className="inset-panel rounded-2xl p-6">

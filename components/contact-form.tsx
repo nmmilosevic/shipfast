@@ -74,7 +74,7 @@ export function ContactForm() {
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6" noValidate>
       {submitState === "success" ? (
         <Alert variant="success">
-          <AlertDescription>Your idea is in motion. We will get back to you within 48 hours.</AlertDescription>
+          <AlertDescription>Your build request is in motion. We will get back to you within 48 hours.</AlertDescription>
         </Alert>
       ) : null}
       {submitState === "error" ? (
@@ -107,11 +107,11 @@ export function ContactForm() {
         <Textarea
           id="idea"
           aria-invalid={Boolean(errors.idea)}
-          placeholder="Tell us what you want to build, who it is for, what problem it solves, and what made you think about it."
+          placeholder="Tell us what you want to build, who it serves, why it matters, and how fast you want to move."
           {...register("idea")}
         />
         <p className="text-sm font-extralight leading-6 text-muted">
-          Rough is fine. A few sentences about the person, problem, and desired result is enough.
+          Rough is fine. Focus on the opportunity, the user, the pressure, and the result you want.
         </p>
         {errors.idea ? <p className="text-sm font-light text-destructive">{errors.idea.message}</p> : null}
       </div>
@@ -163,7 +163,7 @@ export function ContactForm() {
 
       <Button type="submit" size="lg" disabled={isSubmitting} className="w-full sm:w-auto">
         {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" /> : null}
-        Send your idea
+        Send build request
       </Button>
     </form>
   );

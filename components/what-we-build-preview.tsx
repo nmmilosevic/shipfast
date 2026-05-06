@@ -4,14 +4,14 @@ import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import { SectionHeading } from "@/components/section-heading";
 
 export const productTypes = [
-  "Client portals that replace scattered emails",
-  "AI tools with one clear job",
-  "Dashboards for decisions and follow-up",
-  "Booking apps with simple confirmations",
-  "Internal tools for repeated work",
-  "Automation tools for manual handoffs",
+  "Client portals for premium service delivery",
+  "AI tools that compress manual work",
+  "Dashboards for revenue and operations",
+  "Booking flows that remove back-and-forth",
+  "Internal tools for repeatable execution",
+  "Automation systems for handoffs",
   "Custom platforms for niche workflows",
-  "PDF generators for proposals and reports",
+  "Proposal and report generators",
 ];
 
 export function WhatWeBuildPreview({ showLink = true }: { showLink?: boolean }) {
@@ -20,9 +20,9 @@ export function WhatWeBuildPreview({ showLink = true }: { showLink?: boolean }) 
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           label="What we build"
-          title="Ideas we can bring to life."
-          text="Small, focused digital products built around a real problem. The goal is not to build everything you can imagine. The goal is to build the version people can understand, use, and trust."
-          kicker="A good first product should feel obvious once it exists."
+          title="Powerful products with one sharp job."
+          text="We build focused digital products that create leverage: tools that save time, sell a service, manage clients, automate workflows, or unlock a new offer."
+          kicker="The first version should feel fast, premium, and immediately useful."
         />
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {productTypes.map((type) => (

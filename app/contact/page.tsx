@@ -4,7 +4,7 @@ import { ContactForm } from "@/components/contact-form";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Tell ShipFast Studio what you want to build.",
+  description: "Send ShipFast Studio your product build request.",
 };
 
 export default function ContactPage() {
@@ -13,16 +13,16 @@ export default function ContactPage() {
       <div>
         <p className="inline-flex rounded-full px-3 py-1 text-xs font-light uppercase tracking-widest stamp">Contact</p>
         <h1 className="mt-6 text-5xl font-light tracking-tight text-foreground md:text-7xl">
-          Tell us what you want to build.
+          Send the build request.
         </h1>
         <p className="mt-8 text-base font-extralight leading-8 text-muted">
-          Even a simple message is enough to get started. Tell us what is in your head, what problem keeps coming back, or what product you wish already existed.
+          Tell us what needs to exist, who it is for, and why it matters now. We will reply with a practical next step within 48 hours.
         </p>
         <div className="mt-8 space-y-4">
           {[
-            "You can write casually. No technical document needed.",
-            "We reply within 48 hours with a practical next step.",
-            "If the idea needs simplifying, we will help you shape it.",
+            "No technical document needed.",
+            "48 hour first response.",
+            "Scope, price, and build path made clear.",
           ].map((item) => (
             <div key={item} className="inset-panel rounded-xl p-4 text-sm font-light leading-6 text-foreground">
               {item}

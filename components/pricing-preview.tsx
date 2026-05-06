@@ -6,12 +6,12 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { SectionHeading } from "@/components/section-heading";
 
 export const included = [
-  "Idea shaping and scope document",
-  "User flow and screen planning",
-  "UX and UI design",
+  "Strategic scope and product brief",
+  "User flow and screen system",
+  "Premium UX and UI design",
   "Product build and database setup",
   "Deployment and launch support",
-  "Full code ownership and handover",
+  "Code ownership and handover",
 ];
 
 export function PricingPreview({ showLink = true }: { showLink?: boolean }) {
@@ -20,16 +20,16 @@ export function PricingPreview({ showLink = true }: { showLink?: boolean }) {
       <div className="mx-auto grid max-w-6xl gap-10 px-6 lg:grid-cols-[1fr_420px] lg:items-start">
         <SectionHeading
           label="Pricing"
-          title="Simple pricing. No surprises."
-          text="Every project starts with a clear scope and a fixed price. You will know what is included, what is not included, how long it should take, and what happens after launch."
-          kicker="We do not sell vague retainers. We agree on a useful first product and build toward it."
+          title="Premium build. Fixed scope."
+          text="Every project starts with a clear scope and a fixed price. You know what is included, how fast we can move, and what the product must do at launch."
+          kicker="No vague retainers. No slow agency process. A focused product sprint with ownership at the end."
         />
         <Card>
           <CardHeader>
             <p className="text-xs font-light uppercase tracking-widest text-brand">Starting from</p>
             <p className="text-4xl font-light tracking-tight text-foreground">€2,500</p>
             <p className="text-base font-extralight leading-7 text-muted">
-              Built for speed, clarity, launch, and ownership.
+              Built for speed, premium execution, launch, and ownership.
             </p>
           </CardHeader>
           <CardContent>

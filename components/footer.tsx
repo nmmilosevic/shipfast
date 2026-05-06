@@ -7,21 +7,21 @@ export function Footer() {
         <div className="flex flex-col justify-between gap-8 md:flex-row">
           <div className="max-w-sm">
             <Link href="/" className="text-base font-normal tracking-tight">
-              ShipFast <span className="text-gold">Studio</span>
+              ShipFast <span className="text-brand">Studio</span>
             </Link>
             <p className="mt-4 text-base font-extralight leading-7 text-muted">
-              We help people turn the idea they keep thinking about into a product they can show, use, sell, and own.
+              Premium product execution for people who need a strong idea turned into a live product fast.
             </p>
             <p className="mt-4 text-sm font-light leading-6 text-foreground">
-              Product strategy, UX, build, launch, and handover for non-technical founders and operators.
+              Scope, design, build, launch, and handover handled by one focused studio.
             </p>
           </div>
           <div className="space-y-3 text-base font-extralight text-muted">
             <a href="mailto:hello@shipfast.studio" className="block transition-colors hover:text-foreground">
               hello@shipfast.studio
             </a>
-            <p>Reply within 48 hours.</p>
-            <p>Fixed scope before work starts.</p>
+            <p>48 hour first response.</p>
+            <p>Fixed scope. Fast execution.</p>
           </div>
         </div>
         <div className="mt-12 border-t border-border pt-6 text-sm font-extralight text-muted">

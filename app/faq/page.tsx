@@ -8,12 +8,12 @@ const faqs = [
   {
     question: "What if my idea is not fully clear yet?",
     answer:
-      "That is completely normal. Most people come with a rough idea, a recurring frustration, or a note they wrote months ago. We help shape it into something realistic, useful, and buildable.",
+      "That is normal. Bring the rough version, the pressure, and the outcome you want. We help turn it into a focused build scope.",
   },
   {
     question: "Do I need to understand the technical side?",
     answer:
-      "No. You only need to explain the problem, the person it helps, and what you want the product to do. We translate that into product flows, screens, data, and technical decisions.",
+      "No. Explain the problem, the person it helps, and the outcome you want. We translate that into flows, screens, data, and technical decisions.",
   },
   {
     question: "Will I own the product?",
@@ -23,7 +23,7 @@ const faqs = [
   {
     question: "How fast can we launch?",
     answer:
-      "That depends on the idea, but most products move fastest when the first version is focused. We will tell you what can be built quickly and what should wait.",
+      "That depends on the product, but most builds move fastest when the first version is focused. We will tell you what can move quickly and what should wait.",
   },
   {
     question: "Can you improve an idea I already started?",
@@ -33,22 +33,22 @@ const faqs = [
   {
     question: "What happens after I send my idea?",
     answer:
-      "We read it, reply within 48 hours, and suggest the clearest next step. That might be a few questions, a product brief, or a recommendation to simplify the idea first.",
+      "We read it, reply within 48 hours, and suggest the clearest next step. That might be a few questions, a sprint brief, or a recommendation to simplify the product first.",
   },
   {
     question: "What kind of ideas are best for ShipFast Studio?",
     answer:
-      "Focused ideas with a clear user and a clear problem. Client portals, dashboards, internal tools, booking flows, simple AI tools, generators, and niche workflow products are usually a strong fit.",
+      "Focused ideas with a clear user and a clear problem. Client portals, dashboards, internal tools, booking flows, AI tools, generators, and niche workflow products are usually a strong fit.",
   },
   {
     question: "Can you help decide what to build first?",
     answer:
-      "Yes. That is a major part of the work. We help separate what is essential from what can wait, so the first product has a better chance of being launched and used.",
+      "Yes. That is a major part of the work. We separate what is essential from what can wait so the first product can launch faster.",
   },
   {
     question: "Will the product look polished?",
     answer:
-      "Yes. The product is designed before it is built. We focus on clear screens, readable copy, trustworthy UI, and workflows that make sense to real users.",
+      "Yes. The product is designed before it is built. We focus on premium screens, sharp copy, trustworthy UI, and workflows that make sense to real users.",
   },
   {
     question: "What if I only have a budget range?",
@@ -68,13 +68,13 @@ export default function FAQPage() {
       <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
         <p className="inline-flex rounded-full px-3 py-1 text-xs font-light uppercase tracking-widest stamp">FAQ</p>
         <h1 className="mt-6 max-w-4xl text-5xl font-light tracking-tight text-foreground md:text-7xl">
-          Questions before you build.
+          Questions before you move.
         </h1>
         <p className="mt-8 max-w-2xl text-base font-extralight leading-8 text-muted">
-          Clear answers for the moment before an idea becomes real. If you are not technical, this should still feel understandable.
+          Clear answers before you commit to a fast product build. If you are not technical, this should still feel direct.
         </p>
         <Button asChild className="mt-10" size="lg">
-          <Link href="/contact">Ask about your idea</Link>
+          <Link href="/contact">Ask about the build</Link>
         </Button>
       </section>
       <section className="section border-t border-paper-edge bg-surface-secondary">

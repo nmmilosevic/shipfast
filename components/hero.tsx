@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, FileText, ShieldCheck } from "lucide-react";
+import { ArrowRight, CheckCircle2, Gauge, ShieldCheck, Zap } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
@@ -12,55 +12,59 @@ export function Hero() {
       <div className="relative grid gap-10 lg:grid-cols-[1.06fr_0.94fr] lg:items-center">
         <div>
           <p className="inline-flex rounded-full px-3 py-1 text-xs font-light uppercase tracking-widest stamp">
-            Bring your idea to life
+            Premium product execution
           </p>
           <h1 className="mt-6 text-5xl font-light tracking-tight text-foreground md:text-7xl">
-            Scroll through the moment your idea becomes real.
+            Your idea, built fast and built strong.
           </h1>
           <p className="mt-8 max-w-2xl text-base font-extralight leading-8 text-muted md:text-lg">
-            You have been carrying it around for months. This page follows the journey from rough thought to clear scope, working product, launch, and ownership.
+            ShipFast Studio turns serious product ideas into sharp, live software for founders, operators, consultants, and business owners who need execution without a full technical team.
           </p>
           <p className="mt-5 max-w-2xl text-base font-light leading-8 text-foreground">
-            No technical document required. No jargon. Just a cinematic, practical path from the thing in your head to something people can click.
+            Clear scope. Premium interface. Fast build. Full ownership.
           </p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
             <Button asChild size="lg">
               <Link href="/contact">
-                Start a product brief
+                Build my product
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Link>
             </Button>
             <Button asChild variant="secondary" size="lg">
-              <Link href="#chapter-01">Start the story</Link>
+              <Link href="#chapter-01">See the sprint</Link>
             </Button>
           </div>
           <div className="mt-8 grid gap-3 text-sm font-light text-muted sm:grid-cols-3">
-            {["48 hour reply", "Fixed scope", "Full ownership"].map((item) => (
+            {["48 hour reply", "Fixed scope", "Premium delivery"].map((item) => (
               <div key={item} className="flex items-center gap-2">
-                <CheckCircle2 className="h-4 w-4 text-gold" aria-hidden="true" />
+                <CheckCircle2 className="h-4 w-4 text-brand" aria-hidden="true" />
                 {item}
               </div>
             ))}
           </div>
         </div>
         <div className="paper-panel depth-card rounded-2xl p-5 md:p-7">
-          <div className="rounded-xl border border-paper-edge bg-[#F9F3E8] p-5 shadow-[inset_0_2px_12px_rgba(41,31,18,0.08)]">
+          <div className="rounded-xl border border-paper-edge bg-black/30 p-5 shadow-[inset_0_2px_12px_rgba(0,0,0,0.34)]">
             <div className="flex items-center justify-between border-b border-paper-edge pb-4">
               <div>
-                <p className="text-xs font-light uppercase tracking-widest text-brand">Product brief</p>
-                <h2 className="mt-1 text-2xl font-light tracking-tight">Idea to launch</h2>
+                <p className="text-xs font-light uppercase tracking-widest text-brand">Execution system</p>
+                <h2 className="mt-1 text-2xl font-light tracking-tight">Idea to launch sprint</h2>
               </div>
               <ShieldCheck className="h-8 w-8 text-brand" aria-hidden="true" />
             </div>
             <div className="mt-5 space-y-4">
               {[
-                ["Your rough idea", "We listen for the problem, the person, and the outcome you want."],
-                ["A clear build plan", "We turn the idea into screens, features, timeline, and price."],
-                ["A real product", "You receive the live product, codebase, and handover notes."],
+                ["Scope locked", "The product is shaped into clear screens, features, and launch criteria."],
+                ["Build velocity", "Design, development, database, and deployment move in one focused sprint."],
+                ["Ownership delivered", "You receive the live product, codebase, and handover notes."],
               ].map(([title, text]) => (
-                <div key={title} className="rounded-xl border border-paper-edge bg-surface p-4">
+                <div key={title} className="rounded-xl border border-paper-edge bg-white/5 p-4">
                   <div className="flex gap-3">
-                    <FileText className="mt-1 h-4 w-4 shrink-0 text-gold" aria-hidden="true" />
+                    {title === "Build velocity" ? (
+                      <Gauge className="mt-1 h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
+                    ) : (
+                      <Zap className="mt-1 h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
+                    )}
                     <div>
                       <h3 className="text-base font-normal">{title}</h3>
                       <p className="mt-2 text-sm font-extralight leading-6 text-muted">{text}</p>
@@ -70,7 +74,7 @@ export function Hero() {
               ))}
             </div>
             <div className="mt-5 rounded-xl bg-brand px-4 py-3 text-sm font-light leading-6 text-white">
-              Built for people who know what should exist, but need the technical partner to make it real.
+              Built for people who want the power of a product team without hiring one.
             </div>
           </div>
         </div>

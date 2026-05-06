@@ -13,10 +13,10 @@ const navLinks = [
 
 export function Nav() {
   return (
-    <header className="sticky top-0 z-40 border-b border-paper-edge bg-surface/90 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-paper-edge bg-surface/86 backdrop-blur">
       <nav className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6" aria-label="Main navigation">
         <Link href="/" className="text-base font-normal tracking-tight" aria-label="ShipFast Studio home">
-          ShipFast <span className="text-gold">Studio</span>
+          ShipFast <span className="text-brand">Studio</span>
         </Link>
         <div className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
@@ -31,7 +31,7 @@ export function Nav() {
         </div>
         <Button asChild size="sm">
           <Link href="/contact">
-              <span className="hidden sm:inline">Start a product brief</span>
+              <span className="hidden sm:inline">Build fast</span>
             <span className="sm:hidden">Share idea</span>
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </Link>

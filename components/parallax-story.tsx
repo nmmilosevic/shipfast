@@ -6,36 +6,36 @@ import { Button } from "@/components/ui/button";
 const chapters = [
   {
     number: "01",
-    eyebrow: "The thought",
-    title: "It starts as a tab you keep reopening in your head.",
-    text: "You see the product clearly in moments: while answering a client, fixing the same spreadsheet, or explaining the same process again. Then the day gets busy and the idea goes back on the shelf.",
+    eyebrow: "Pressure",
+    title: "The idea is ready. The delay is costing you.",
+    text: "You know the workflow, the customer, the offer, or the internal problem. What you do not have is the technical force to turn it into a product fast enough.",
     detail:
-      "This is where most useful products stall. Not because the idea is weak, but because turning it into screens, flows, data, and a launch plan is hard when you are not the technical person.",
+      "ShipFast Studio starts by cutting through the noise. We identify the sharpest version of the idea and move it toward launch with speed and control.",
     icon: CircleDot,
-    artifact: "Rough note",
-    lines: ["Who is this for?", "What problem keeps repeating?", "What should feel easier?"],
+    artifact: "Opportunity",
+    lines: ["High-value problem", "Clear buyer or user", "Fast path to launch"],
   },
   {
     number: "02",
-    eyebrow: "The shape",
-    title: "We turn the fog into a product brief.",
-    text: "The first job is not coding. It is finding the simple version that should exist first. We listen, ask direct questions, remove extra weight, and turn the idea into a clear buildable scope.",
+    eyebrow: "Command",
+    title: "We lock the scope and remove drag.",
+    text: "The first move is precision. We define what needs to ship, what can wait, and what the product must prove when it goes live.",
     detail:
-      "You get plain-language decisions: what the product does, what it does not do yet, what screens it needs, what data it stores, and what the launch version should cost.",
+      "You get a direct build plan: screens, features, data, timeline, price, launch criteria, and ownership. No vague roadmap. No endless discovery.",
     icon: ClipboardList,
-    artifact: "Product brief",
-    lines: ["Main user", "First useful workflow", "Fixed scope and price"],
+    artifact: "Build plan",
+    lines: ["Screens defined", "Features prioritized", "Price fixed"],
   },
   {
     number: "03",
-    eyebrow: "The build",
-    title: "The product becomes something you can click through.",
-    text: "Once the shape is clear, we design and build the product in visible steps. You see the idea become a real interface, then a working product, then something live.",
+    eyebrow: "Execution",
+    title: "Design, build, launch. No dead weight.",
+    text: "Once the scope is locked, we move with focus. Interface, database, logic, deployment, and handover are handled as one coordinated product sprint.",
     detail:
-      "The process stays calm: previews, decisions, updates, launch support, and handover. No black box. No technical fog. Just steady movement from idea to product.",
+      "You see progress, make decisions quickly, and receive a live product you can use, sell, show, or operate. Speed matters, but control matters more.",
     icon: Layers3,
-    artifact: "Working product",
-    lines: ["Designed screens", "Live database", "Launch and handover"],
+    artifact: "Live product",
+    lines: ["Premium interface", "Working backend", "Launch handover"],
   },
 ];
 
@@ -46,13 +46,13 @@ export function ParallaxStory() {
         <div className="grid gap-10 lg:grid-cols-[0.76fr_1.24fr]">
           <aside className="story-progress">
             <p className="inline-flex rounded-full px-3 py-1 text-xs font-light uppercase tracking-widest stamp">
-              Story
+              Sprint
             </p>
             <h2 id="story-title" className="mt-5 text-3xl font-light tracking-tight md:text-5xl">
-              From the idea you carry to the product you can share.
+              A fast path from idea to live product.
             </h2>
             <p className="mt-6 text-base font-extralight leading-8 text-muted">
-              This is the real journey: the private thought, the clearer shape, the working product, and the moment you finally have something tangible.
+              A premium service for people who need product execution now: pressure, command, execution, launch.
             </p>
             <div className="mt-8 hidden space-y-3 lg:block">
               {chapters.map((chapter) => (
@@ -105,7 +105,7 @@ export function ParallaxStory() {
                           <div className="flex items-center justify-between border-b border-paper-edge pb-4">
                             <div>
                               <p className="text-xs font-light uppercase tracking-widest text-gold">{chapter.artifact}</p>
-                              <p className="mt-1 text-sm font-light text-muted">Chapter artifact</p>
+                              <p className="mt-1 text-sm font-light text-muted">Sprint asset</p>
                             </div>
                             <Icon className="h-7 w-7 text-brand" aria-hidden="true" />
                           </div>
@@ -125,16 +125,16 @@ export function ParallaxStory() {
             })}
 
             <div className="paper-panel depth-card rounded-2xl p-8 md:p-10">
-              <Sparkles className="h-7 w-7 text-gold" aria-hidden="true" />
+              <Sparkles className="h-7 w-7 text-brand" aria-hidden="true" />
               <h3 className="mt-5 text-3xl font-light tracking-tight md:text-5xl">
-                The last scene is simple: you finally have the product.
+                The final output is simple: a product with force.
               </h3>
               <p className="mt-6 max-w-3xl text-base font-extralight leading-8 text-muted">
-                A live product you can show to a client, test with a user, use inside your business, or build a new offer around. The idea stops being a conversation and becomes something real.
+                A live product you can show to a client, test with a user, use inside your business, or build a new offer around. Built quickly, presented cleanly, and owned by you.
               </p>
               <Button asChild size="lg" className="mt-8">
                 <Link href="/contact">
-                  Start the story
+                  Start the sprint
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </Link>
               </Button>

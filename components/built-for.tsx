@@ -4,19 +4,19 @@ import { SectionHeading } from "@/components/section-heading";
 const audiences = [
   {
     title: "Founders",
-    text: "You have an idea that keeps coming back, and you want to see if it can become a real product without hiring a team first.",
+    text: "You need to validate or launch a product without waiting months to recruit a technical team.",
   },
   {
     title: "Freelancers",
-    text: "You repeat the same advice, process, or deliverable for clients. We help turn that expertise into a tool people can use.",
+    text: "You want to turn a service, method, or repeatable client workflow into software people can use.",
   },
   {
     title: "Business owners",
-    text: "You know where time is being wasted. We help build a portal, dashboard, or workflow tool around that real operational pain.",
+    text: "You need a powerful internal tool, portal, dashboard, or automation that removes operational drag.",
   },
   {
-    title: "Creative people",
-    text: "You can picture how it should feel, but need someone technical to turn the vision into a working product.",
+    title: "Operators",
+    text: "You see the process breaking every week and want a tool that fixes it with speed and authority.",
   },
 ];
 
@@ -26,9 +26,9 @@ export function BuiltFor() {
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           label="Built for"
-          title="For people with ideas."
-          text="You do not need to know how to code to build something valuable. You need a clear problem, a useful direction, and a technical partner who can translate it into a product."
-          kicker="If you can explain the problem in human terms, we can help turn it into screens, flows, data, and a working launch."
+          title="For people who need execution."
+          text="You do not need to know how to code. You need a clear problem, commercial urgency, and a technical studio that can turn it into a strong product."
+          kicker="If the idea matters enough to stop delaying, it is ready for a serious build conversation."
         />
         <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {audiences.map((audience) => (

@@ -13,10 +13,10 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "ShipFast Studio | Bring Your Idea to Life",
+    default: "ShipFast Studio | Premium Product Builds",
     template: "%s | ShipFast Studio",
   },
-  description: "ShipFast Studio helps non-technical founders and operators turn product ideas into real working products.",
+  description: "ShipFast Studio builds powerful, premium software products fast for founders, operators, consultants, and service businesses.",
   metadataBase: new URL("https://shipfast.studio"),
 };
 

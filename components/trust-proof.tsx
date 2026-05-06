@@ -5,33 +5,33 @@ import { SectionHeading } from "@/components/section-heading";
 const promises = [
   {
     icon: ClipboardCheck,
-    title: "Clear scope before build",
-    text: "You see the product shape, main screens, required features, and fixed price before work starts.",
+    title: "Scope before speed",
+    text: "Fast execution only works when the target is clear. We lock the product shape before build starts.",
   },
   {
     icon: Timer,
-    title: "Fast without being careless",
-    text: "We move quickly because the product is focused, not because important decisions are rushed.",
+    title: "Velocity with control",
+    text: "We move quickly because decisions are tight, communication is direct, and the product is focused.",
   },
   {
     icon: LockKeyhole,
-    title: "Your idea stays yours",
-    text: "The product, code, and assets are handed over to you. There is no platform lock-in.",
+    title: "You own the asset",
+    text: "The live product, code, and handover notes belong to you. No platform lock-in.",
   },
   {
     icon: Handshake,
-    title: "Human communication",
-    text: "You get plain updates, clear decisions, and direct explanations instead of technical fog.",
+    title: "Direct communication",
+    text: "You get clear updates, decisive recommendations, and explanations without technical fog.",
   },
   {
     icon: Code2,
-    title: "Built on proven tools",
+    title: "Premium technical base",
     text: "We use reliable modern tools so the product can be maintained, improved, and deployed properly.",
   },
   {
     icon: Rocket,
-    title: "Launch included",
-    text: "The work does not stop at design. We help get the product live and ready to share.",
+    title: "Launch is part of the job",
+    text: "The work does not stop at screens. We help get the product live and ready to use.",
   },
 ];
 
@@ -41,9 +41,9 @@ export function TrustProof() {
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           label="Trust"
-          title="A product partner for the unclear middle."
-          text="The hardest part is often not the idea. It is the space between idea and reality: what to build first, what to ignore, what it should cost, and how to know if the product is ready."
-          kicker="ShipFast Studio exists to make that middle part calm, practical, and visible."
+          title="A product partner built for momentum."
+          text="The hardest part is not usually the idea. It is the execution layer: scope, speed, technical decisions, product polish, launch, and ownership."
+          kicker="ShipFast Studio gives you the power of a focused product team without the overhead of hiring one."
         />
         <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {promises.map((promise) => {

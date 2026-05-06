@@ -6,24 +6,24 @@ import { SectionHeading } from "@/components/section-heading";
 
 export const examples = [
   {
-    title: "Lead tracker for a consultant",
-    text: "A private dashboard for a consultant who was losing track of warm leads across email, notes, and spreadsheets. The product shows who needs a reply, what each opportunity is worth, and what happened last.",
-    badge: "Sales workflow",
+    title: "Revenue command center",
+    text: "A fast private dashboard for leads, follow-ups, deal value, and client status. Built for a consultant who needed sales visibility without spreadsheet chaos.",
+    badge: "Revenue ops",
   },
   {
-    title: "Invoice tool for freelancers",
-    text: "A clean invoice generator for freelancers who want branded PDFs without rebuilding the same document every month. Client details, hours, rates, tax, and notes become a ready-to-send invoice.",
-    badge: "Freelance ops",
+    title: "Premium invoice engine",
+    text: "A branded invoice and PDF tool that turns client details, hours, rates, tax, and notes into a clean document ready to send.",
+    badge: "Service ops",
   },
   {
-    title: "Booking page for a small business",
-    text: "A booking product for a small business that needed fewer back-and-forth messages. Customers choose a slot, receive the details, and the owner gets a clear schedule.",
+    title: "High-conversion booking flow",
+    text: "A direct booking product for a service business that needed fewer messages, faster scheduling, and cleaner confirmations.",
     badge: "Booking",
   },
   {
-    title: "Client portal for a studio",
-    text: "A private portal that gives clients one calm place for files, project updates, approvals, and next steps. Less chasing. Fewer lost messages. More trust.",
-    badge: "Client trust",
+    title: "Executive client portal",
+    text: "A premium portal for files, project updates, approvals, and next steps. Built to make a service feel sharper and more trustworthy.",
+    badge: "Premium delivery",
   },
 ];
 
@@ -33,8 +33,8 @@ export function ExamplesPreview({ showLink = true }: { showLink?: boolean }) {
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           label="Examples"
-          title="Ideas turned into products."
-          text="Most useful products start as a small annoyance someone understands deeply. We help turn that insight into a tool that feels clear from the first click."
+          title="Service ideas turned into product assets."
+          text="The strongest products often start as operational pain: repeated work, slow handoffs, unclear client experiences, or missed revenue. We turn that pressure into software."
         />
         <div className="mt-12 grid gap-4 md:grid-cols-2">
           {examples.map((example) => (

@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "How It Works",
-  description: "A simple process for turning your rough product idea into something real.",
+  description: "A fast premium process for turning your product idea into a live build.",
 };
 
 export default function HowItWorksPage() {
@@ -16,29 +16,29 @@ export default function HowItWorksPage() {
       <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
         <p className="inline-flex rounded-full px-3 py-1 text-xs font-light uppercase tracking-widest stamp">How it works</p>
         <h1 className="mt-6 max-w-4xl text-5xl font-light tracking-tight text-foreground md:text-7xl">
-          Building your idea should feel clear.
+          Fast execution needs a clear command.
         </h1>
         <p className="mt-8 max-w-2xl text-base font-extralight leading-8 text-muted">
-          You do not need a finished plan. You need a way to explain the idea, see what matters, and move toward a product people can use.
+          You do not need a finished plan. You need a fast way to define the strongest version, lock the scope, and move into build.
         </p>
         <p className="mt-5 max-w-3xl text-base font-light leading-8 text-foreground">
-          We work like a technical product partner: listening first, simplifying next, then building only what is needed to make the idea real.
+          We work like a focused product unit: strategy, UX, build, launch, and handover in one premium service.
         </p>
         <Button asChild className="mt-10" size="lg">
-          <Link href="/contact">Share your idea</Link>
+          <Link href="/contact">Start the sprint</Link>
         </Button>
       </section>
       <HowItWorks showLink={false} />
       <section className="section">
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="max-w-3xl text-3xl font-light tracking-tight md:text-5xl">
-            What happens after you reach out.
+            What happens after you send the request.
           </h2>
           <div className="mt-12 grid gap-4 md:grid-cols-3">
             {[
-              ["First reply", "We read your message and reply with useful questions, not a generic sales call. If the idea is not a fit, we say so clearly."],
-              ["Product brief", "We turn the idea into a short brief covering the user, problem, screens, first features, timeline, and fixed price."],
-              ["Build rhythm", "You get visible progress, working previews, and decisions in plain English until the product is ready to launch."],
+              ["First response", "We read the request and identify the strongest product angle, risks, and next step. No generic sales script."],
+              ["Sprint brief", "We define the user, problem, screens, first features, timeline, and fixed project price."],
+              ["Build rhythm", "You get visible progress, working previews, and direct decisions until the product is ready to launch."],
             ].map(([title, text]) => (
               <div key={title} className="paper-panel rounded-2xl p-6">
                 <h3 className="text-xl font-normal">{title}</h3>
