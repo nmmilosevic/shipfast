@@ -1,14 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --brand: #7F77DD;
-  --brand-light: #EEEDFE;
-  --brand-dark: #534AB7;
-  --foreground: #0F0F0F;
-  --muted: #6B6B6B;
-  --border: rgba(0,0,0,0.1);
-  --surface: #FFFFFF;
-  --surface-secondary: #F7F6F4;
+  --brand: #1E3A8A;
+  --brand-light: #E9EEF8;
+  --brand-dark: #102A63;
+  --gold: #B45309;
+  --gold-light: #FFF4DE;
+  --ink: #172033;
+  --foreground: #111827;
+  --muted: #596273;
+  --border: rgba(24,32,51,0.16);
+  --surface: #FFFDF8;
+  --surface-secondary: #F3EFE6;
+  --paper-edge: #E1D8C9;
   --background: var(--surface);
   --card: var(--surface);
   --card-foreground: var(--foreground);
@@ -19,8 +23,8 @@
   --secondary: var(--surface-secondary);
   --secondary-foreground: var(--foreground);
   --muted-foreground: var(--muted);
-  --accent: var(--brand-light);
-  --accent-foreground: var(--brand-dark);
+  --accent: var(--gold-light);
+  --accent-foreground: var(--gold);
   --destructive: #B42318;
   --destructive-foreground: #FFFFFF;
   --input: var(--border);
@@ -34,6 +38,10 @@
   --color-brand: var(--brand);
   --color-brand-light: var(--brand-light);
   --color-brand-dark: var(--brand-dark);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-ink: var(--ink);
+  --color-paper-edge: var(--paper-edge);
   --color-muted: var(--muted);
   --color-border: var(--border);
   --color-surface: var(--surface);
@@ -69,7 +77,10 @@ html {
 }
 
 body {
-  background: var(--surface);
+  background:
+    linear-gradient(rgba(255, 253, 248, 0.92), rgba(255, 253, 248, 0.92)),
+    repeating-linear-gradient(90deg, rgba(17, 24, 39, 0.025) 0 1px, transparent 1px 28px),
+    var(--surface);
   color: var(--foreground);
   font-family: var(--font-dm-sans), sans-serif;
   text-rendering: geometricPrecision;
@@ -90,6 +101,32 @@ select {
 
 .section {
   padding-block: 5rem;
+}
+
+.paper-panel {
+  border: 1px solid var(--paper-edge);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.88), rgba(255,253,248,0.96)),
+    var(--surface);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.9),
+    0 1px 0 rgba(255,255,255,0.9),
+    0 18px 45px rgba(41, 31, 18, 0.08);
+}
+
+.inset-panel {
+  border: 1px solid var(--border);
+  background: #F7F2E8;
+  box-shadow:
+    inset 0 2px 8px rgba(41, 31, 18, 0.08),
+    inset 0 -1px 0 rgba(255,255,255,0.75);
+}
+
+.stamp {
+  border: 1px solid rgba(180, 83, 9, 0.32);
+  background: var(--gold-light);
+  color: var(--gold);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.72);
 }
 
 @media (min-width: 768px) {

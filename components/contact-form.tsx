@@ -107,9 +107,12 @@ export function ContactForm() {
         <Textarea
           id="idea"
           aria-invalid={Boolean(errors.idea)}
-          placeholder="Tell us what you want to build, who it is for, and why it matters."
+          placeholder="Tell us what you want to build, who it is for, what problem it solves, and what made you think about it."
           {...register("idea")}
         />
+        <p className="text-sm font-extralight leading-6 text-muted">
+          Rough is fine. A few sentences about the person, problem, and desired result is enough.
+        </p>
         {errors.idea ? <p className="text-sm font-light text-destructive">{errors.idea.message}</p> : null}
       </div>
 

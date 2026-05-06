@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     default: "ShipFast Studio | Bring Your Idea to Life",
     template: "%s | ShipFast Studio",
   },
-  description: "ShipFast Studio turns product ideas into real working products.",
+  description: "ShipFast Studio helps non-technical founders and operators turn product ideas into real working products.",
   metadataBase: new URL("https://shipfast.studio"),
 };
 
