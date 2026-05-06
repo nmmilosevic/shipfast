@@ -7,22 +7,22 @@ import { SectionHeading } from "@/components/section-heading";
 export const examples = [
   {
     title: "Revenue command center",
-    text: "A fast private dashboard for leads, follow-ups, deal value, and client status. Built for a consultant who needed sales visibility without spreadsheet chaos.",
+    text: "A private dashboard built for a consultant drowning in spreadsheets. Leads, follow-ups, deal values, and client status — all in one place.",
     badge: "Revenue ops",
   },
   {
     title: "Premium invoice engine",
-    text: "A branded invoice and PDF tool that turns client details, hours, rates, tax, and notes into a clean document ready to send.",
+    text: "A branded invoicing tool that turns client info into a polished, ready-to-send PDF in seconds. No more copy-paste formatting.",
     badge: "Service ops",
   },
   {
     title: "High-conversion booking flow",
-    text: "A direct booking product for a service business that needed fewer messages, faster scheduling, and cleaner confirmations.",
+    text: "A booking system built for a service business tired of endless message chains. Clients book, confirm, and pay — without the friction.",
     badge: "Booking",
   },
   {
     title: "Executive client portal",
-    text: "A premium portal for files, project updates, approvals, and next steps. Built to make a service feel sharper and more trustworthy.",
+    text: "A private login portal for files, project updates, and approvals — built to make the service look as good as it actually is.",
     badge: "Premium delivery",
   },
 ];
@@ -32,9 +32,8 @@ export function ExamplesPreview({ showLink = true }: { showLink?: boolean }) {
     <section className="section bg-surface-secondary">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
-          label="Examples"
-          title="Service ideas turned into product assets."
-          text="The strongest products often start as operational pain: repeated work, slow handoffs, unclear client experiences, or missed revenue. We turn that pressure into software."
+          title="Ideas we've turned into real products."
+          text="These started as problems, repeated tasks, or things someone said 'we really should have a tool for that.' Here's what they became."
         />
         <div className="mt-12 grid gap-4 md:grid-cols-2">
           {examples.map((example) => (

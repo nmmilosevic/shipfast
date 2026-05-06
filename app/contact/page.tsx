@@ -4,25 +4,25 @@ import { ContactForm } from "@/components/contact-form";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Send ShipFast Studio your product build request.",
+  description:
+    "Share your idea with us. Tell us what you want to exist — we'll get back to you within 48 hours with a clear next step. No tech knowledge required.",
 };
 
 export default function ContactPage() {
   return (
     <section className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:py-28 lg:grid-cols-[0.8fr_1.2fr]">
       <div>
-        <p className="inline-flex px-3 py-1 text-xs font-light uppercase tracking-widest stamp">Contact</p>
-        <h1 className="mt-6 text-5xl font-light tracking-tight text-foreground md:text-7xl">
-          Send the build request.
+        <h1 className="font-heading text-5xl font-light tracking-tight text-foreground md:text-7xl">
+          Share your idea with us.
         </h1>
         <p className="mt-8 text-base font-extralight leading-8 text-muted">
-          Tell us what needs to exist, who it is for, and why it matters now. We will reply with a practical next step within 48 hours.
+          Tell us what you want to exist, who it&apos;s for, and why it matters. We&apos;ll get back to you within 48 hours with a clear next step.
         </p>
         <div className="mt-8 space-y-4">
           {[
             "No technical document needed.",
-            "48 hour first response.",
-            "Scope, price, and build path made clear.",
+            "Reply in 48 hours.",
+            "We'll explain the next step clearly.",
           ].map((item) => (
             <div key={item} className="inset-panel p-4 text-sm font-light leading-6 text-foreground">
               {item}

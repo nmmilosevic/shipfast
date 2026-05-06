@@ -7,38 +7,38 @@ import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "How It Works",
-  description: "A fast premium process for turning your product idea into a live build.",
+  description:
+    "Getting your idea built is simpler than you think. Three clear steps from idea to live product — no tech knowledge required.",
 };
 
 export default function HowItWorksPage() {
   return (
     <>
       <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-        <p className="inline-flex px-3 py-1 text-xs font-light uppercase tracking-widest stamp">How it works</p>
-        <h1 className="mt-6 max-w-4xl text-5xl font-light tracking-tight text-foreground md:text-7xl">
-          Fast execution needs a clear command.
+        <h1 className="font-heading max-w-4xl text-5xl font-light tracking-tight text-foreground md:text-7xl">
+          Getting your idea built is simpler than you think.
         </h1>
         <p className="mt-8 max-w-2xl text-base font-extralight leading-8 text-muted">
-          You do not need a finished plan. You need a fast way to define the strongest version, lock the scope, and move into build.
+          You don&apos;t need a technical plan, a finished spec, or a CTO. You just need an idea and a decision to start.
         </p>
         <p className="mt-5 max-w-3xl text-base font-light leading-8 text-foreground">
-          We work like a focused product unit: strategy, UX, build, launch, and handover in one premium service.
+          We handle everything: understanding your idea, designing the product, building it, getting it live, and handing it over.
         </p>
         <Button asChild className="mt-10" size="lg">
-          <Link href="/contact">Start the sprint</Link>
+          <Link href="/contact">Share your idea</Link>
         </Button>
       </section>
       <HowItWorks showLink={false} />
       <section className="section">
         <div className="mx-auto max-w-6xl px-6">
-          <h2 className="max-w-3xl text-3xl font-light tracking-tight md:text-5xl">
-            What happens after you send the request.
+          <h2 className="font-heading max-w-3xl text-3xl font-light tracking-tight md:text-5xl">
+            What happens after you reach out.
           </h2>
           <div className="mt-12 grid gap-4 md:grid-cols-3">
             {[
-              ["First response", "We read the request and identify the strongest product angle, risks, and next step. No generic sales script."],
-              ["Sprint brief", "We define the user, problem, screens, first features, timeline, and fixed project price."],
-              ["Build rhythm", "You get visible progress, working previews, and direct decisions until the product is ready to launch."],
+              ["We read your idea", "We look at what you've sent, identify the strongest product angle, and figure out the right next step. No generic reply."],
+              ["We map the product", "We define who it's for, what it does, every screen, the timeline, and a fixed price — before a single line of code is written."],
+              ["We build and keep you in the loop", "You see progress, get plain-English updates, and make real decisions — until the product is live and in your hands."],
             ].map(([title, text]) => (
               <div key={title} className="paper-panel p-6">
                 <h3 className="text-xl font-normal">{title}</h3>

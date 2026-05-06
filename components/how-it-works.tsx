@@ -5,16 +5,16 @@ import { SectionHeading } from "@/components/section-heading";
 
 const steps = [
   {
-    title: "Brief the mission",
-    text: "Send the idea, the customer, the pressure, and the outcome you need. We extract the product opportunity fast.",
+    title: "Tell us your idea",
+    text: "Send a message in plain English. No technical document needed — just tell us what you want to exist and why.",
   },
   {
-    title: "Lock the sprint",
-    text: "We define the launch version, screens, data, features, timeline, and fixed project price before build starts.",
+    title: "We plan it and price it",
+    text: "We map out every screen, feature, and detail. You get a clear plan and a fixed price before we start building.",
   },
   {
-    title: "Ship the product",
-    text: "We design, build, connect, deploy, and hand over a live product with the codebase and next-step notes.",
+    title: "We build and hand it over",
+    text: "We design, build, test, deploy, and hand over a live product — with the code and everything you need to keep going.",
   },
 ];
 
@@ -23,10 +23,9 @@ export function HowItWorks({ showLink = true }: { showLink?: boolean }) {
     <section className="section border-t border-paper-edge bg-surface-secondary">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
-          label="How it works"
-          title="A high-speed path from idea to product."
-          text="The process is built for decisive execution. You get clarity quickly, decisions stay visible, and the first version is engineered to launch."
-          kicker="Fast does not mean vague. Fast means focused scope, fewer delays, and a product built around the strongest use case."
+          title="Three steps from idea to live product."
+          text="We've made it as simple as possible — because getting your idea built shouldn't be complicated."
+          kicker="Fast doesn't mean rushed. It means we remove everything that slows things down."
         />
         <div className="mt-12 grid gap-4 md:grid-cols-3">
           {steps.map((step, index) => (
@@ -43,9 +42,9 @@ export function HowItWorks({ showLink = true }: { showLink?: boolean }) {
         </div>
         <div className="mt-10 grid gap-4 md:grid-cols-3">
           {[
-            "Scope locked before work starts.",
-            "Direct progress updates without technical fog.",
-            "Launch support and ownership handover.",
+            "Everything is agreed before we start building.",
+            "You'll understand every update — no jargon.",
+            "We stay until it's live and working.",
           ].map((item) => (
             <div key={item} className="inset-panel p-5 text-sm font-light leading-6 text-foreground">
               {item}

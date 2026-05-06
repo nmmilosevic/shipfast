@@ -3,20 +3,20 @@ import { SectionHeading } from "@/components/section-heading";
 
 const audiences = [
   {
-    title: "Founders",
-    text: "You need to validate or launch a product without waiting months to recruit a technical team.",
+    title: "You're a founder",
+    text: "You want to turn your idea into a real product without hiring a full team or waiting months.",
   },
   {
-    title: "Freelancers",
-    text: "You want to turn a service, method, or repeatable client workflow into software people can use.",
+    title: "You're a freelancer or consultant",
+    text: "You want to package your expertise into software that works for you even when you're not working.",
   },
   {
-    title: "Business owners",
-    text: "You need a powerful internal tool, portal, dashboard, or automation that removes operational drag.",
+    title: "You run a business",
+    text: "You need a tool that saves your team hours every week — built exactly for how you work.",
   },
   {
-    title: "Operators",
-    text: "You see the process breaking every week and want a tool that fixes it with speed and authority.",
+    title: "You see a problem no one has solved",
+    text: "You've spotted something that software could fix. You just need someone who can build it properly.",
   },
 ];
 
@@ -25,10 +25,9 @@ export function BuiltFor() {
     <section className="section">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
-          label="Built for"
-          title="For people who need execution."
-          text="You do not need to know how to code. You need a clear problem, commercial urgency, and a technical studio that can turn it into a strong product."
-          kicker="If the idea matters enough to stop delaying, it is ready for a serious build conversation."
+          title="This is for you — if you have an idea worth building."
+          text="You don't need to be technical. You don't need a big team. You just need an idea you believe in and the decision to start."
+          kicker="If you've been waiting because you didn't know how to start — this is exactly how you start."
         />
         <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {audiences.map((audience) => (

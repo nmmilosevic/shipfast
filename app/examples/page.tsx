@@ -7,29 +7,29 @@ import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Examples",
-  description: "Practical premium product examples ShipFast Studio can build fast.",
+  description:
+    "Real ideas turned into real products. Client portals, dashboards, booking tools, and more — see what's possible when you have an idea and the right team to build it.",
 };
 
 export default function ExamplesPage() {
   return (
     <>
       <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-        <p className="inline-flex px-3 py-1 text-xs font-light uppercase tracking-widest stamp">Examples</p>
-        <h1 className="mt-6 max-w-4xl text-5xl font-light tracking-tight text-foreground md:text-7xl">
-          Service ideas turned into product assets.
+        <h1 className="font-heading max-w-4xl text-5xl font-light tracking-tight text-foreground md:text-7xl">
+          Real ideas turned into real products.
         </h1>
         <p className="mt-8 max-w-2xl text-base font-extralight leading-8 text-muted">
-          These are the kinds of focused products we can build fast. Practical, premium, and built around real operational pressure.
+          These aren&apos;t hypotheticals — they&apos;re the kinds of problems people actually had, and the products we built to solve them.
         </p>
         <Button asChild className="mt-10" size="lg">
-          <Link href="/contact">Request a build</Link>
+          <Link href="/contact">Build something like this</Link>
         </Button>
       </section>
       <ExamplesPreview showLink={false} />
       <section className="section">
         <div className="mx-auto max-w-6xl px-6">
-          <h2 className="max-w-3xl text-3xl font-light tracking-tight text-foreground md:text-5xl">
-            Strong products often start as pressure.
+          <h2 className="font-heading max-w-3xl text-3xl font-light tracking-tight text-foreground md:text-5xl">
+            Your idea could be next.
           </h2>
           <div className="mt-12 grid gap-4 md:grid-cols-2">
             {examples.map((example) => (
@@ -40,9 +40,9 @@ export default function ExamplesPage() {
             ))}
           </div>
           <div className="mt-12 border border-paper-edge bg-surface-secondary p-8">
-            <h3 className="text-2xl font-light tracking-tight">The first version should hit hard.</h3>
+            <h3 className="font-heading text-2xl font-light tracking-tight">The best first version is small but powerful.</h3>
             <p className="mt-4 max-w-3xl text-base font-extralight leading-8 text-muted">
-              A useful first product might be one dashboard, one portal, one generator, one intake flow, or one automation that removes a painful manual step. Small does not mean weak. Small means fast, clear, and ready to launch.
+              A useful first product might be one dashboard, one portal, one generator, or one booking flow. Simple to explain, valuable to use, and fast to launch. Small doesn&apos;t mean weak — it means focused.
             </p>
           </div>
         </div>

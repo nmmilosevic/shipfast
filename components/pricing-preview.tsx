@@ -6,12 +6,12 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { SectionHeading } from "@/components/section-heading";
 
 export const included = [
-  "Strategic scope and product brief",
-  "User flow and screen system",
-  "Premium UX and UI design",
-  "Product build and database setup",
-  "Deployment and launch support",
-  "Code ownership and handover",
+  "A clear plan for your product before we build a single thing",
+  "Every screen mapped and designed",
+  "Beautiful, premium design",
+  "The product built and connected to real data",
+  "Getting it live and ready to use",
+  "The code is yours — forever",
 ];
 
 export function PricingPreview({ showLink = true }: { showLink?: boolean }) {
@@ -19,17 +19,16 @@ export function PricingPreview({ showLink = true }: { showLink?: boolean }) {
     <section className="section border-t border-border">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 lg:grid-cols-[1fr_420px] lg:items-start">
         <SectionHeading
-          label="Pricing"
-          title="Premium build. Fixed scope."
-          text="Every project starts with a clear scope and a fixed price. You know what is included, how fast we can move, and what the product must do at launch."
-          kicker="No vague retainers. No slow agency process. A focused product sprint with ownership at the end."
+          title="One price. No surprises."
+          text="Before we start, you know exactly what's included, what it costs, and when it launches."
+          kicker="No retainers. No hidden extras. Just a focused build, done right, and handed to you."
         />
         <Card>
           <CardHeader>
             <p className="text-xs font-light uppercase tracking-widest text-brand">Starting from</p>
-            <p className="text-4xl font-light tracking-tight text-foreground">€2,500</p>
+            <p className="font-heading text-4xl font-light tracking-tight text-foreground">€2,500</p>
             <p className="text-base font-extralight leading-7 text-muted">
-              Built for speed, premium execution, launch, and ownership.
+              Designed, built, launched, and handed over — with everything you need.
             </p>
           </CardHeader>
           <CardContent>

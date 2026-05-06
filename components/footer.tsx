@@ -12,18 +12,18 @@ export function Footer() {
               <LogoMark className="h-12 w-auto" />
             </Link>
             <p className="mt-4 text-base font-extralight leading-7 text-muted">
-              Premium product execution for people who need a strong idea turned into a live product fast.
+              We turn ideas into real, working products — without you needing a technical team, a developer, or months of waiting.
             </p>
             <p className="mt-4 text-sm font-light leading-6 text-foreground">
-              Scope, design, build, launch, and handover handled by one focused studio.
+              One studio. Everything handled. Fully yours at the end.
             </p>
           </div>
           <div className="space-y-3 text-base font-extralight text-muted">
             <a href="mailto:hello@shipfast.studio" className="block transition-colors hover:text-foreground">
               hello@shipfast.studio
             </a>
-            <p>48 hour first response.</p>
-            <p>Fixed scope. Fast execution.</p>
+            <p>Reply in 48 hours.</p>
+            <p>Clear price. Real product.</p>
           </div>
         </div>
         <div className="mt-12 border-t border-border pt-6 text-sm font-extralight text-muted">

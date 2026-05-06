@@ -6,75 +6,75 @@ import { Button } from "@/components/ui/button";
 
 const faqs = [
   {
-    question: "What if my idea is not fully clear yet?",
+    question: "Do I need to know anything about technology?",
     answer:
-      "That is normal. Bring the rough version, the pressure, and the outcome you want. We help turn it into a focused build scope.",
+      "Not at all. Just explain the problem you want to solve, who it helps, and what you'd like it to do. We handle everything technical from there.",
   },
   {
-    question: "Do I need to understand the technical side?",
+    question: "What if my idea isn't fully formed yet?",
     answer:
-      "No. Explain the problem, the person it helps, and the outcome you want. We translate that into flows, screens, data, and technical decisions.",
+      "That's completely normal. Most ideas arrive rough. Bring what you have — even a few sentences — and we'll help shape it into something concrete.",
   },
   {
-    question: "Will I own the product?",
+    question: "Will I own the product when it's done?",
     answer:
-      "Yes. You receive the finished product, the codebase, and handover notes. There is no lock-in and no requirement to keep paying us after launch.",
+      "Yes. 100%. You get the finished product, the code, and everything you need to keep going. There's no lock-in and no reason to keep paying us after it launches.",
   },
   {
-    question: "How fast can we launch?",
+    question: "How long does it take?",
     answer:
-      "That depends on the product, but most builds move fastest when the first version is focused. We will tell you what can move quickly and what should wait.",
+      "That depends on what you're building, but most focused products launch in weeks, not months. We'll give you a clear timeline before we start.",
   },
   {
-    question: "Can you improve an idea I already started?",
+    question: "What does it cost?",
     answer:
-      "Yes. If you already have notes, designs, spreadsheets, a partial build, or a workflow you use manually, we can use that as the starting point.",
+      "Projects start from €2,500. The exact price depends on what you need, and you'll know it before anything starts. No surprises.",
   },
   {
     question: "What happens after I send my idea?",
     answer:
-      "We read it, reply within 48 hours, and suggest the clearest next step. That might be a few questions, a sprint brief, or a recommendation to simplify the product first.",
+      "We read it carefully, reply within 48 hours, and suggest the clearest next step. That might be a few questions, a plan, or a recommendation to simplify things first.",
   },
   {
-    question: "What kind of ideas are best for ShipFast Studio?",
+    question: "Can you improve something I've already started?",
     answer:
-      "Focused ideas with a clear user and a clear problem. Client portals, dashboards, internal tools, booking flows, AI tools, generators, and niche workflow products are usually a strong fit.",
+      "Yes. If you already have notes, a rough design, a spreadsheet, or a partially built product, we can use that as the starting point.",
   },
   {
-    question: "Can you help decide what to build first?",
+    question: "What kinds of things do you build?",
     answer:
-      "Yes. That is a major part of the work. We separate what is essential from what can wait so the first product can launch faster.",
+      "Client portals, dashboards, booking flows, internal tools, AI-powered tools, document generators, and custom platforms built around specific workflows. If it solves a real problem, we can likely build it.",
   },
   {
-    question: "Will the product look polished?",
+    question: "What if I only have a rough budget in mind?",
     answer:
-      "Yes. The product is designed before it is built. We focus on premium screens, sharp copy, trustworthy UI, and workflows that make sense to real users.",
+      "That's fine. Tell us what you're working with and we'll shape a scope around it. If the idea needs more investment than expected, we'll explain why before anything starts.",
   },
   {
-    question: "What if I only have a budget range?",
+    question: "Will it look good?",
     answer:
-      "That is fine. Share the range and we will shape a scope around what is realistic. If the idea needs more budget than expected, we will explain why before anything starts.",
+      "Yes. Every product is fully designed before it's built. Premium screens, clear copy, and a polished feel that makes your product look as good as it works.",
   },
 ];
 
 export const metadata: Metadata = {
   title: "FAQ",
-  description: "Answers for people who want to turn a rough product idea into something real.",
+  description:
+    "Plain-language answers for people who want to turn their idea into a real product — no tech knowledge required.",
 };
 
 export default function FAQPage() {
   return (
     <>
       <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-        <p className="inline-flex px-3 py-1 text-xs font-light uppercase tracking-widest stamp">FAQ</p>
-        <h1 className="mt-6 max-w-4xl text-5xl font-light tracking-tight text-foreground md:text-7xl">
-          Questions before you move.
+        <h1 className="font-heading max-w-4xl text-5xl font-light tracking-tight text-foreground md:text-7xl">
+          Questions we get asked a lot.
         </h1>
         <p className="mt-8 max-w-2xl text-base font-extralight leading-8 text-muted">
-          Clear answers before you commit to a fast product build. If you are not technical, this should still feel direct.
+          If you&apos;re not technical, these answers are written for you. Plain language, no jargon.
         </p>
         <Button asChild className="mt-10" size="lg">
-          <Link href="/contact">Ask about the build</Link>
+          <Link href="/contact">Ask us anything</Link>
         </Button>
       </section>
       <section className="section border-t border-paper-edge bg-surface-secondary">
