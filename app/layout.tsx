@@ -22,12 +22,12 @@ const fraunces = Fraunces({
 
 export const metadata: Metadata = {
   title: {
-    default: "ShipFast Studio — Turn Your Idea Into a Real App",
-    template: "%s | ShipFast Studio",
+    default: "Buildwise — Turn Your Idea Into a Real App",
+    template: "%s | Buildwise",
   },
   description:
     "Got a business idea you can't stop thinking about? We design, build, and launch your app in weeks — no tech knowledge required. Fixed price, full ownership, real results.",
-  metadataBase: new URL("https://shipfast.studio"),
+  metadataBase: new URL("https://buildwise.co"),
   keywords: [
     "turn idea into app",
     "build an app without coding",
@@ -43,22 +43,22 @@ export const metadata: Metadata = {
     "idea to product",
   ],
   openGraph: {
-    title: "ShipFast Studio — Turn Your Idea Into a Real App",
+    title: "Buildwise — Turn Your Idea Into a Real App",
     description:
       "Got a business idea you can't stop thinking about? We design, build, and launch your app in weeks — no tech knowledge required.",
-    url: "https://shipfast.studio",
-    siteName: "ShipFast Studio",
+    url: "https://buildwise.co",
+    siteName: "Buildwise",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ShipFast Studio — Turn Your Idea Into a Real App",
+    title: "Buildwise — Turn Your Idea Into a Real App",
     description:
       "Got a business idea you can't stop thinking about? We design, build, and launch your app in weeks — no tech knowledge required.",
   },
   alternates: {
-    canonical: "https://shipfast.studio",
+    canonical: "https://buildwise.co",
   },
   robots: {
     index: true,
@@ -76,11 +76,12 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "ShipFast Studio",
-  url: "https://shipfast.studio",
+  name: "Buildwise",
+  url: "https://buildwise.co",
   description:
     "We design, build, and launch custom apps and digital products for entrepreneurs and business owners — no technical knowledge required.",
-  email: "hello@shipfast.studio",
+  email: "hello@buildwise.co",
+
   serviceType: "Software Development",
   areaServed: "Worldwide",
   hasOfferCatalog: {

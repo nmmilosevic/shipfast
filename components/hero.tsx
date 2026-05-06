@@ -1,14 +1,24 @@
 import Link from "next/link";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, Layers3, Package, Sparkles } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
-const proof = ["Reply in 48 hours", "Clear price upfront", "You own everything"];
-
-const signals = [
-  ["01", "Share your idea", "Tell us in plain words what you want to exist. No technical document, no deck needed."],
-  ["02", "We figure out what to build", "We define the product, the screens, and the cost — and lock it all in before we start."],
-  ["03", "You get the real thing", "Design, build, launch, handover. A product you can show, sell, and grow."],
+const outcomes = [
+  {
+    icon: Sparkles,
+    title: "A product people can actually use",
+    text: "Designed, built, tested, and live. Not a mockup, not a prototype — the real thing.",
+  },
+  {
+    icon: Package,
+    title: "The code is completely yours",
+    text: "No lock-in, no monthly fee to us, no strings attached. You own everything.",
+  },
+  {
+    icon: Layers3,
+    title: "A clear path to what comes next",
+    text: "Handover notes, next steps, and everything you need to keep growing or hand off.",
+  },
 ];
 
 export function Hero() {
@@ -30,37 +40,41 @@ export function Hero() {
               </Link>
             </Button>
             <Button asChild variant="secondary" size="lg">
-              <Link href="#chapter-01">See how it works</Link>
+              <Link href="#story-title">See how it works</Link>
             </Button>
-          </div>
-          <div className="mt-9 grid gap-3 text-sm font-light text-muted sm:grid-cols-3">
-            {proof.map((item) => (
-              <div key={item} className="flex min-h-11 items-center gap-2 border border-paper-edge px-3">
-                <CheckCircle2 className="h-4 w-4 text-brand" aria-hidden="true" />
-                {item}
-              </div>
-            ))}
           </div>
         </div>
 
-        <div className="paper-panel">
-          <div className="border-b border-paper-edge px-5 py-4">
-            <p className="text-xs font-light uppercase tracking-widest text-brand">How it works</p>
-            <p className="mt-2 font-heading text-2xl font-light tracking-tight text-foreground">From &ldquo;I have this idea&rdquo; to live product</p>
+        {/* Outcome card */}
+        <div className="paper-panel overflow-hidden">
+          <div className="border-b border-paper-edge bg-brand px-6 py-5">
+            <p className="font-heading text-2xl font-light tracking-tight text-white">
+              What you walk away with.
+            </p>
+            <p className="mt-1 text-sm font-extralight text-white/70">
+              From the very first conversation.
+            </p>
           </div>
+
           <div className="divide-y divide-paper-edge">
-            {signals.map(([number, title, text]) => (
-              <div key={number} className="grid gap-4 p-5 sm:grid-cols-[4rem_1fr]">
-                <span className="text-sm font-light text-brand">{number}</span>
-                <div>
-                  <h2 className="text-xl font-normal text-foreground">{title}</h2>
-                  <p className="mt-2 text-base font-extralight leading-7 text-muted">{text}</p>
+            {outcomes.map((item) => {
+              const Icon = item.icon;
+              return (
+                <div key={item.title} className="flex gap-4 p-5">
+                  <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center border border-paper-edge">
+                    <Icon className="h-4 w-4 text-brand" aria-hidden="true" />
+                  </div>
+                  <div>
+                    <p className="text-base font-normal text-foreground">{item.title}</p>
+                    <p className="mt-1 text-sm font-extralight leading-6 text-muted">{item.text}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
-          <div className="border-t border-brand bg-brand px-5 py-4 text-sm font-light leading-6 text-white">
-            Built for clarity, speed, and full ownership.
+
+          <div className="border-t border-paper-edge px-6 py-4 text-sm font-light text-muted">
+            From idea to launch: <span className="text-foreground">weeks, not months.</span>
           </div>
         </div>
       </div>
