@@ -4,7 +4,7 @@ import { LogoMark } from "@/components/logo";
 
 export function Footer() {
   return (
-    <footer className="border-t border-paper-edge bg-surface-secondary">
+    <footer className="bg-surface-secondary">
       <div className="mx-auto max-w-6xl px-6 py-12">
         <div className="flex flex-col justify-between gap-8 md:flex-row">
           <div className="max-w-sm">
@@ -26,7 +26,7 @@ export function Footer() {
             <p>Clear price. Real product.</p>
           </div>
         </div>
-        <div className="mt-12 border-t border-border pt-6 text-sm font-extralight text-muted">
+        <div className="mt-12 pt-6 text-sm font-extralight text-muted">
           © 2026 Buildwise
         </div>
       </div>

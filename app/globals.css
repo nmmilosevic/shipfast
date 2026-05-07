@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --brand: #1D4FFF;
-  --brand-light: rgba(29,79,255,0.16);
-  --brand-dark: #7EA0FF;
-  --ink: #F4F7FF;
-  --foreground: #F4F7FF;
-  --muted: #9BA8C7;
-  --border: rgba(172,190,255,0.18);
-  --surface: #05070D;
-  --surface-secondary: #090D16;
-  --paper-edge: rgba(172,190,255,0.2);
+  --brand: #1D3D2A;
+  --brand-light: rgba(29,61,42,0.09);
+  --brand-dark: #142B1E;
+  --ink: #1C1917;
+  --foreground: #1C1917;
+  --muted: #78716C;
+  --border: rgba(28,25,23,0.06);
+  --surface: #F9F7F4;
+  --surface-secondary: #F2EFE9;
+  --paper-edge: rgba(28,25,23,0.06);
   --background: var(--surface);
-  --card: var(--surface);
+  --card: #FFFFFF;
   --card-foreground: var(--foreground);
-  --popover: var(--surface);
+  --popover: #FFFFFF;
   --popover-foreground: var(--foreground);
   --primary: var(--brand);
   --primary-foreground: #FFFFFF;
@@ -25,9 +25,9 @@
   --accent-foreground: #FFFFFF;
   --destructive: #B42318;
   --destructive-foreground: #FFFFFF;
-  --input: rgba(172,190,255,0.22);
+  --input: rgba(28,25,23,0.08);
   --ring: var(--brand);
-  --radius: 0rem;
+  --radius: 0.625rem;
 }
 
 @theme inline {
@@ -67,7 +67,6 @@
 
 * {
   border-color: var(--border);
-  border-radius: 0 !important;
 }
 
 html {
@@ -82,8 +81,8 @@ body {
 }
 
 ::selection {
-  background: var(--brand);
-  color: #FFFFFF;
+  background: rgba(29,61,42,0.15);
+  color: var(--foreground);
 }
 
 a,
@@ -99,13 +98,14 @@ select {
 }
 
 .paper-panel {
-  border: 1px solid var(--paper-edge);
-  background: rgba(9, 13, 22, 0.92);
+  background: var(--card);
+  border-radius: 0.875rem;
+  box-shadow: 0 2px 8px rgba(28,25,23,0.06), 0 8px 28px rgba(28,25,23,0.04);
 }
 
 .inset-panel {
-  border: 1px solid var(--border);
-  background: rgba(5, 7, 13, 0.78);
+  background: var(--surface-secondary);
+  border-radius: 0.625rem;
 }
 
 .hero-section {
@@ -120,7 +120,7 @@ select {
   right: 0;
   width: 60%;
   height: 100%;
-  background: radial-gradient(ellipse 70% 60% at 70% 40%, rgba(29, 79, 255, 0.1) 0%, transparent 70%);
+  background: radial-gradient(ellipse 70% 60% at 70% 40%, rgba(29, 61, 42, 0.05) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
 }
@@ -155,9 +155,7 @@ select {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  border-left: 1px solid rgba(172,190,255,0.08);
-  border-right: 1px solid rgba(172,190,255,0.08);
-  opacity: 0.22;
+  opacity: 0;
 }
 
 .story-chapter {
@@ -175,19 +173,17 @@ select {
 
 .depth-card {
   transform: translateZ(0);
-  transition: border-color 200ms ease, background-color 200ms ease;
+  transition: border-color 200ms ease, box-shadow 200ms ease;
 }
 
 .depth-card:hover {
-  border-color: rgba(29, 79, 255, 0.62);
-  background-color: rgba(12, 18, 32, 0.96);
+  box-shadow: 0 2px 8px rgba(28,25,23,0.10), 0 8px 28px rgba(28,25,23,0.08);
 }
 
 .parallax-layer {
   position: absolute;
   pointer-events: none;
-  border: 1px solid rgba(29, 79, 255, 0.34);
-  background: rgba(29, 79, 255, 0.08);
+  background: rgba(29, 61, 42, 0.04);
 }
 
 .parallax-slow {
@@ -220,6 +216,7 @@ select {
 
   .depth-card:hover {
     border-color: var(--paper-edge);
+    box-shadow: none;
   }
 }
 

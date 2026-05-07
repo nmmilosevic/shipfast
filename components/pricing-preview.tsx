@@ -16,7 +16,7 @@ export const included = [
 
 export function PricingPreview({ showLink = true }: { showLink?: boolean }) {
   return (
-    <section className="section border-t border-border">
+    <section className="section">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 lg:grid-cols-[1fr_420px] lg:items-start">
         <SectionHeading
           title="One price. No surprises."

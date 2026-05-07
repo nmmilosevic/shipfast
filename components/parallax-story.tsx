@@ -91,7 +91,7 @@ export function ParallaxStory() {
       <div
         ref={containerRef}
         style={{ height: `${SCROLL_HEIGHT_VH}vh` }}
-        className="border-b border-paper-edge bg-surface-secondary"
+        className="bg-surface-secondary"
         aria-labelledby="story-title"
       >
         <div className="sticky top-0 h-screen overflow-hidden bg-surface-secondary">
@@ -191,7 +191,7 @@ export function ParallaxStory() {
       </div>
 
       {/* Result section — appears after scroll through all 3 steps */}
-      <section className="section bg-surface-secondary border-b border-paper-edge">
+      <section className="section bg-surface-secondary">
         <div className="mx-auto max-w-6xl px-6">
           <Send className="h-7 w-7 text-brand" aria-hidden="true" />
           <h3 className="font-heading mt-5 max-w-3xl text-3xl font-light tracking-tight md:text-5xl">

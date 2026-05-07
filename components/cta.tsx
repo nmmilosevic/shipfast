@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export function CTA() {
   return (
-    <section className="section border-t border-border">
+    <section className="section bg-surface-secondary">
       <div className="mx-auto max-w-6xl px-6">
         <div className="max-w-3xl">
           <h2 className="font-heading text-3xl font-light tracking-tight text-foreground md:text-5xl">

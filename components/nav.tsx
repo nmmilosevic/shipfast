@@ -14,7 +14,7 @@ const navLinks = [
 
 export function Nav() {
   return (
-    <header className="sticky top-0 z-40 border-b border-paper-edge bg-surface/86 backdrop-blur">
+    <header className="sticky top-0 z-40 bg-surface/90 backdrop-blur">
       <nav className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6" aria-label="Main navigation">
         <Link href="/" className="inline-flex items-center text-foreground" aria-label="Buildwise home">
           <LogoMark className="text-xl sm:text-2xl" />
@@ -24,7 +24,7 @@ export function Nav() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-extralight text-muted transition-colors hover:text-foreground"
+              className="text-sm font-light text-muted transition-colors hover:text-foreground"
             >
               {link.label}
             </Link>

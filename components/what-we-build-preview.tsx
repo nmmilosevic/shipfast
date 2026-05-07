@@ -16,7 +16,7 @@ export const productTypes = [
 
 export function WhatWeBuildPreview({ showLink = true }: { showLink?: boolean }) {
   return (
-    <section className="section border-t border-border">
+    <section className="section">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           title="Some ideas of what we can build for you."
